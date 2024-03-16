@@ -9,8 +9,9 @@ import Link from 'next/link'
 
 export default function page() {
   return (
-<div key="1" className="flex justify-center items-center min-h-screen background-image">   <div className="flex flex-col items-center">
-        <Card className="rounded-lg border border-gray-100 b-white  dark:border-white dark:bg-gray-150 dark:text-black w-[800px] shadow-lg">
+<div key="1" className="flex justify-center items-center min-h-screen background-image px-4"> 
+  <div className="flex flex-col items-center">
+<Card className="rounded-lg border border-gray-100 b-white dark:border-white dark:bg-gray-150 dark:text-black max-w-[800px] w-full shadow-lg">
           <CardHeader>
 
             <div className="flex flex-col items-center mt-4">
@@ -19,13 +20,9 @@ export default function page() {
                 <AvatarImage alt="Profile picture" src="https://i.ibb.co/w0585Fy/63979f47790f05.78935161.jpg" />
                 <AvatarFallback className="text-xl ">KS</AvatarFallback>
               </Avatar>
-              <h2 className="mt-2 font-semibold text-lg">@Kayjayohpcs</h2>
-              <a className="text-sm text-gray-600 mt-1">
-                PCs Given Away: 11
-              </a>
-              <a className="text-sm text-gray-600 mt-1">
-                Are you next?!
-              </a>
+              <h2 className="mt-2 font-semibold text-lg md:text-xl">@Kayjayohpcs</h2>
+<a className="text-sm md:text-base text-gray-600 mt-1">PCs Given Away: 11</a>
+<a className="text-sm md:text-base text-gray-600 mt-1">Are you next?!</a>
             </div>
           </CardHeader>
           <div className="flex space-x-4 mb-4 justify-center ">
@@ -47,33 +44,33 @@ export default function page() {
             </Button>
           </div>
           <CardContent>
-            <div className="grid grid-cols-4 gap-4">
-              <div className="flex items-center justify-between col-span-2 border border-gray-200  p-2 rounded-lg shadow-lg ">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+            <div className="flex items-center justify-between col-span-2 border border-gray-200 p-2 md:p-4 rounded-lg shadow-lg">
                 <TikokIcon className="h-6 w-6" />
                 <div className="flex-1 ml-3">
                   <h3 className="font-semibold">Tiktok</h3>
-                  <p className="text-sm text-gray-500">tiktok.com/@kayjayohpcs</p>
+                  <p className="text-sm text-gray-500">@kayjayohpcs</p>
                 </div>
-                <Link href="https://www.tiktok.com/@kayjayohpcs"><Button variant="ghost" className="dark:hover:bg-neutral-100 dark:hover:text-black">View</Button></Link>
+                <Link href="https://www.tiktok.com/@kayjayohpcs"><Button variant="ghost" className=" dark:hover:bg-neutral-100 dark:hover:text-black">View</Button></Link>
               </div>
-              <div className="flex items-center justify-between col-span-2 border border-gray-200 p-2 rounded-lg shadow-lg ">
+              <div className="flex items-center justify-between col-span-2 border border-gray-200 p-2 md:p-4 rounded-lg shadow-lg">
                 <InstagramIcon className="h-6 w-6" />
                 <div className="flex-1 ml-3">
                   <h3 className="font-semibold">Instaaaaa</h3>
-                  <p className="text-sm text-gray-500">instagram.com/kayjayohpcs</p>
+                  <p className="text-sm text-gray-500">@kayjayohpcs</p>
                 </div>
                 <Link href="https://instagram.com/kayjayohpcs"><Button variant="ghost" className="dark:hover:bg-neutral-100 dark:hover:text-black">View</Button></Link>
               </div>
-              <div className="flex items-center justify-between col-span-2 border border-gray-200 p-2 rounded-lg shadow-lg ">
+              <div className="flex items-center justify-between col-span-2 border border-gray-200 p-2 md:p-4 rounded-lg shadow-lg">
                 <YoutubeIcon className="h-6 w-6" />
                 <div className="flex-1 ml-3">
                   <h3 className="font-semibold">YouTube</h3>
-                  <p className="text-sm text-gray-500">youtube.com/@Kayjayohpcs</p>
+                  <p className="text-sm text-gray-500">@kayjayohpcs</p>
                 </div>
                 <Link href="https://youtube.com/@Kayjayohpcs"><Button variant="ghost" className="dark:hover:bg-neutral-100 dark:hover:text-black">View</Button></Link>
               </div>
               
-              <div className="flex items-center justify-between col-span-2 border border-gray-200 p-2 rounded-lg shadow-lg ">
+              <div className="flex items-center justify-between col-span-2 border border-gray-200 p-2 md:p-4 rounded-lg shadow-lg">
                 <KeyIcon className="h-6 w-6" />
                 <div className="flex-1 ml-3">
                   <h3 className="font-semibold">Discord for PC Giveaway!!!!</h3>
@@ -81,7 +78,7 @@ export default function page() {
                 </div>
                 <Link href="https://discord.com/invite/kjo"><Button variant="ghost" className="dark:hover:bg-neutral-100 dark:hover:text-black">View</Button></Link>
               </div>
-              <div className="flex items-center justify-between col-span-2 border border-gray-200 p-2 rounded-lg shadow-lg ">
+              <div className="flex items-center justify-between col-span-2 border border-gray-200 p-2 md:p-4 rounded-lg shadow-lg">
                 <HardDriveIcon className="h-6 w-6" />
                 <div className="flex-1 ml-3">
                   <h3 className="font-semibold">Crucial T705 SSD</h3>
@@ -89,7 +86,7 @@ export default function page() {
                 </div>
                 <Link href="https://crucial.gg/kayjayohpcs"><Button variant="ghost" className="dark:hover:bg-neutral-100 dark:hover:text-black">Shop</Button></Link>
               </div>
-               <div className="flex items-center justify-between col-span-2 border border-gray-200 p-2 rounded-lg shadow-lg "> 
+              <div className="flex items-center justify-between col-span-2 border border-gray-200 p-2 md:p-4 rounded-lg shadow-lg">
                 <ComputerIcon className="h-6 w-6" />
                 <div className="flex-1 ml-3">
                   <h3 className="font-semibold">NZXT Prebuilt!!!</h3>
@@ -108,7 +105,7 @@ export default function page() {
   )
 }
 
-function MailIcon(props) {
+function MailIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -129,7 +126,7 @@ function MailIcon(props) {
 }
 
 
-function DiscIcon(props) {
+function DiscIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"       fill="none"
       stroke="currentColor"
@@ -140,7 +137,7 @@ function DiscIcon(props) {
 }
 
 
-function InstagramIcon(props) {
+function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -161,7 +158,7 @@ function InstagramIcon(props) {
   )
 }
 
-function TikokIcon(props) {
+function TikokIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
 <svg fill="#000000" width="25px" height="25px" viewBox="0 0 268 250" id="Flat" xmlns="http://www.w3.org/2000/svg">
   <path d="M224,124a95.56424,95.56424,0,0,1-56.00043-18.01709L168,156A68,68,0,1,1,88,89.05544l-.00061,41.63941A28.0028,28.0028,0,1,0,128,156V28h40a56,56,0,0,0,56,56Z" opacity="0"/>
@@ -170,7 +167,7 @@ function TikokIcon(props) {
   )
 }
 
-function YoutubeIcon(props) {
+function YoutubeIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -191,7 +188,7 @@ function YoutubeIcon(props) {
 }
 
 
-function KeyIcon(props) {
+function KeyIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"       fill="none"
       stroke="currentColor"
@@ -203,7 +200,7 @@ function KeyIcon(props) {
 }
 
 
-function HardDriveIcon(props) {
+function HardDriveIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -226,7 +223,7 @@ function HardDriveIcon(props) {
 }
 
 
-function ComputerIcon(props) {
+function ComputerIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
